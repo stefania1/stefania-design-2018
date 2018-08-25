@@ -129,10 +129,10 @@ header {
     right: 0;
     left: 0;
     top: 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.13);
-    -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.13);
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.13);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.13);
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.13);
+    -webkit-box-shadow: 5px 5px 3px rgba(0,0,0,0.13);
+    -moz-box-shadow: 5px 5px 3px rgba(0,0,0,0.13);
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.13);
     z-index: 10;
 }
 
@@ -154,16 +154,21 @@ ul.topnav li {
 }
 
 ul.topnav li a {
-    color: #11217c;
+    color: #6399f5;
     font-weight: 700 !important;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
     padding: 5px;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -ms-transition: color .5s linear;
+    -o-transition: color .5s linear;
+    transition: color .5s linear;
 }
 
 ul.topnav li a:hover {
-    color: #6399f5 !important;
+    color: #EE8CA3 !important;
 }
 
 ul.topnav li:last-child {
@@ -206,7 +211,7 @@ a.cv-link:active img.cv-img-hvr {
     left: 50%;
     right: 50%;
     bottom: 0;
-    background:  #6399f5;
+    background:  #EE8CA3;
     height: 3px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -237,6 +242,9 @@ button.responsive-btn {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
 }
 
 .headline h1 {
@@ -257,6 +265,9 @@ button.responsive-btn {
    ========================================================================== */
 #work {
     background-color: #232F3F;
+    -webkit-box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
 }
 #portfolio {  
     margin-top: 15px;
@@ -313,6 +324,11 @@ button.responsive-btn {
     color: #fff;
     background: none !important;
     border: none !important;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -ms-transition: color .5s linear;
+    -o-transition: color .5s linear;
+    transition: color .5s linear;
 }
 
 .btn:hover {
@@ -341,41 +357,98 @@ button.responsive-btn {
 
 .text-about {
     padding: 5%;
+    -webkit-box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
 }
 /* ==========================================================================
-   Footer style
+   Contact style
    ========================================================================== */
 
-footer {
+#contact {
     background-image: url(../img/footer-bg.png);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-box-shadow: inset 0px 7px 19px -6px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 7px 19px -6px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 7px 19px -6px rgba(0,0,0,0.5)
 }
 
-footer p {
+#contact p {
     font-size: 24px;
 }
 
-footer ul {
+#contact ul {
     list-style-type: none;
     padding-left: 0;
     float: left;
 }
-footer ul li {
+#contact ul li {
     padding-bottom: 10px;
 }
-footer ul li a {
+#contact ul li a {
     text-decoration:none;
     font-size: 14px;
+    color: #333436;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -ms-transition: color .5s linear;
+    -o-transition: color .5s linear;
+    transition: color .5s linear;
+}
+
+#contact ul li a:hover {
+    color: #EE8CA3;
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+    display: block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #EE8CA3;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+  }
+
+/* ==========================================================================
+   Footer style
+   ========================================================================== */
+
+footer {
+    background-color: #fff;
+    -webkit-box-shadow: inset 0px 7px 19px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 7px 19px -10px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 7px 19px -10px rgba(0,0,0,0.5);
+    padding: 5px;
 }
 p.copyright {
     font-size: 12px;
-    padding-left: 5%;
 }
-.container-centred{
 
+.container-centred {
     max-width: 900px;
     float: none;
     margin: auto;
@@ -391,9 +464,29 @@ p.copyright {
     width: 50%;
     padding-left: 5%;
 }
+
+@media only screen and (max-width: 981px) {
+    .myphoto {
+        margin-top: 12%;
+    }
+    .container, .container-centred {
+        display: block;
+        max-width: 1000px;
+    }
+
+    #contact .container {
+        display:  inline-flex;
+        width: 100%;
+    }
+    p.copyright {
+        padding-left: 35%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .container, .container-centred {
         display: block;
+        max-width: 1000px;
     }
 
     #menu{
@@ -442,15 +535,15 @@ p.copyright {
         border-radius: 1px;
         margin-top: 5px;
     }
-
-    
+        
     .myphoto {
         margin-top: 20%;
     }
+
+    p.copyright {
+        padding-left: 30%;
+    }
 }
-
-
-
 
 
 
