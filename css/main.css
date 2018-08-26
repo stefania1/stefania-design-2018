@@ -361,6 +361,21 @@ button.responsive-btn {
     -moz-box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
     box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
 }
+
+.text-about a {
+    text-decoration:none;
+    font-size: 14px;
+    color: #6399f5;
+    -webkit-transition: color .5s linear;
+    -moz-transition: color .5s linear;
+    -ms-transition: color .5s linear;
+    -o-transition: color .5s linear;
+    transition: color .5s linear;
+}
+
+.text-about a:hover {
+    color: #EE8CA3;
+}
 /* ==========================================================================
    Contact style
    ========================================================================== */
