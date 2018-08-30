@@ -360,6 +360,8 @@ button.responsive-btn {
     -webkit-box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
     -moz-box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
     box-shadow: inset 0px 7px 19px -3px rgba(0,0,0,0.5);
+    background-color: #232F3F;
+    color: #fff;
 }
 
 .text-about a {
@@ -477,7 +479,6 @@ p.copyright {
 
 .column-6 {
     width: 50%;
-    padding-left: 5%;
 }
 
 @media only screen and (max-width: 981px) {
@@ -498,6 +499,9 @@ p.copyright {
     }
     .text-about {
         padding: 5%;
+    }
+    .column-6 {
+        padding-left: 5%;
     }
 }
 
