@@ -455,7 +455,8 @@ button.responsive-btn {
    ========================================================================== */
 
 footer {
-    background-color: #fff;
+    background-color: #232F3F;
+    color: #fff;
     -webkit-box-shadow: inset 0px 7px 19px -10px rgba(0,0,0,0.5);
     -moz-box-shadow: inset 0px 7px 19px -10px rgba(0,0,0,0.5);
     box-shadow: inset 0px 7px 19px -10px rgba(0,0,0,0.5);
@@ -546,7 +547,7 @@ p.copyright {
         background-image: none;
         border: 1px solid transparent;
         border-radius: 4px;
-        background-color: #11217c;
+        background-color: #232F3F;
     }
 
     button.responsive-btn span {
