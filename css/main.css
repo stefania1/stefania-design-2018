@@ -305,7 +305,6 @@ button.responsive-btn {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
-  
 }
 
 .btn {
@@ -395,6 +394,7 @@ button.responsive-btn {
 
 #contact p {
     font-size: 24px;
+    margin-bottom: 5px;
 }
 
 #contact ul {
